@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: echo "The job was automatically triggered by a ${{ gitea.event_name }} event."
       - run: pwd
+      - run: ls /home/maximilian
