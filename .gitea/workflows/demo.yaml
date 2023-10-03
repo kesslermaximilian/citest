@@ -6,3 +6,4 @@ jobs:
     runs-on: python
     steps:
       - run: echo "The job was automatically triggered by a ${{ gitea.event_name }} event."
+      - run: pwd
