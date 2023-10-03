@@ -3,6 +3,6 @@ run-name: ${{ gitea.actor }} is testing out Gitea Actions
 on: [push]
 jobs:
   Explore-Gitea-Actions:
-    runs-on: ubuntu-latest
+    runs-on: python
     steps:
       - run: echo "The job was automatically triggered by a ${{ gitea.event_name }} event."
