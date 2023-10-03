@@ -17,14 +17,12 @@ jobs:
         run: |
           ls ${{ gitea.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  Compile-Tex:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        name: check out repository
-      - name: Compile document
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: |
-            test.tex
-      - run: ls
+          root_file: main.tex
