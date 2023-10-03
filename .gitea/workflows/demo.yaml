@@ -6,4 +6,4 @@ jobs:
   Explore-Gitea-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This is a test"
+      - run: ls
