@@ -17,8 +17,8 @@ jobs:
         with:
           docker_image: aergus/latex
           run: |
-            ls
             pwd
+            ls
             latexmk main.tex
       - name: upload
         uses: actions/upload-artifact@v3
