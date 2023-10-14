@@ -3,12 +3,14 @@ run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
 on: [push]
 
 jobs:
-  build_latex:
+  checkout:
     runs-on: ubuntu-latest
-    container:
-      image: aergus/latex
     steps:
       - name: check out repo
         uses: actions/checkout@v3
+  compile:
+    container:
+      image: aergus/latex
+    steps:
       - name: Set up Git repository
         run: latexmk main.tex
