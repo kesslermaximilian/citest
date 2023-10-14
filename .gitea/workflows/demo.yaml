@@ -8,14 +8,14 @@ jobs:
     steps:
       - name: check out repo
         uses: actions/checkout@v3
+      - name: list files
+        run: ls
       - name: compile
         uses: xu-cheng/texlive-action@v2
         with:
           docker_image: aergus/latex
           run: |
             latexmk main.tex
-      - name: list files
-        run: ls
       - name: upload
         uses: actions/upload-artifact@v3
         with:
