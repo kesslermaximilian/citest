@@ -1,0 +1,16 @@
+# Fdb version 3
+["pdflatex"] 1697287461 "main.tex" "build/main.pdf" "main" 1697287461
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls" 1654720880 20144 7555b7429d80bef287ebb82117811acc ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/base/size10.clo" 1654720880 8448 e0391042ca0932ede1098ae14ada60ba ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1661977202 30282 33c465a64f2bd5ad4a68a7b2f555a29b ""
+  "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
+  "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1662316834 4595816 106c4e272f709332e200b7ab82c17944 ""
+  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662316878 3059196 d0cbbf1cbf56dc8b221675217c1cdca5 ""
+  "/usr/local/texlive/2022/texmf.cnf" 1659100854 488 72288e753413e2186dc0ec92c5e4b81c ""
+  "build/main.aux" 1697287461 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1697287459 83 9bba6842030d0549a163b9e12dcbd119 ""
+  (generated)
+  "build/main.aux"
+  "build/main.log"
+  "build/main.pdf"

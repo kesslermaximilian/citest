@@ -1,0 +1,32 @@
+name: Gitea Actions Demo
+run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
+on: [push]
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repo
+        uses: actions/checkout@v3
+      - name: list files
+        run: |
+          echo "In outer docker container:"
+          ls
+          pwd
+          echo "end outer print"
+      - name: compile
+        uses: xu-cheng/texlive-action@v2
+        with:
+          docker_image: aergus/latex
+          run: |
+            echo "in inner container"
+            pwd
+            ls
+            echo "end inner print"
+            echo "starting compilation"
+            latexmk main.tex
+      - name: upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact.tex
+          path: main.tex
